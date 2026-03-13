@@ -19,3 +19,19 @@ print(bicicletas[-1]) #aqui ele imprimiu o último elemento da lista, ou seja, b
 mensagem = f"Minha bicicleta favorita é a {bicicletas[0].title()}"
 
 print(mensagem)
+
+#modificando elementos da lista
+
+#Alterar elementos da lista é bem parecido com referenciar elementos da lista, TOMAR CUIDADO! Não precisa fazer for, é só referenciar normal, por exemplo:
+
+motos = ["honda", "Yamaha", "Ducati"]
+
+print(motos)
+
+#veja que aqui yamaha é o segundo elemento!
+#vou modificá-lo agoa
+
+motos[1] = "TIREI YAMAHA"
+
+print(motos)
+print(motos[1])
