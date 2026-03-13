@@ -35,3 +35,26 @@ motos[1] = "TIREI YAMAHA"
 
 print(motos)
 print(motos[1])
+
+#Para  acrescentar elementos à uma lista, nós usamos append
+
+motos.append("ACRESCIMO1")
+print(motos)
+
+#Note que o append sempre adicionar NO FINAL DA LISTA
+
+#para adicionarmos numa posição específica usamos insert, confira
+
+lista_insert = ["elemento1", "elemento2", "elemento3", "elemento4"]
+
+lista_insert.insert(1,"ACRESCENTADO") #ACRESCENTOU NO INDICE 1
+
+print(lista_insert)
+
+#REMOVENDO ELEMENTOS DA LISTA - "instrução del" - vale SE VC SOUBER O INDICE
+
+lista_del = ["elemento1", "elemento2", "elemento3", "elemento4"]
+
+del lista_del[2]
+
+print(lista_del)
