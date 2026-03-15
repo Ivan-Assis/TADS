@@ -122,5 +122,53 @@ print(elementoRemover)
 
 #O remove SÓ REMOVE A PRIMEIRA OCORRENCIA, se quiser remover todas as ocorrencias tem que repetir o metodo
 
+#ORNDENANDO LISTAS
 
+#O método sort ordena por ordem alfabética: PRA SEMPRE
 
+carros = ["toyota", "honda", "volkswage", "fiat"]
+print(carros)
+carros.sort()
+
+print(carros)
+
+#da pra usar um sort reverse pra colocar em ordem alfabetica contrario PRA SEMPRE
+
+carros.sort(reverse=True) #atento ao case sensitive do true
+print(carros)
+
+#o SORTED faz com que a lista nao fique assim pra sempre, vc so mostra ela e depois ela volta ao normal, aí é um método do print
+
+carrosSORTED = ["toyota", "honda", "volkswage", "fiat"]
+
+print("__________________________________________________")
+
+print(sorted(carrosSORTED))
+print(carrosSORTED)
+
+#da pra fazer reverseTrue com ela tambem
+print(sorted(carrosSORTED, reverse=True))
+
+#USAR ISSO DÁ ERRADO QUANDO ALGUMAS COMECAM COM LETRA MAIUSCULA E OUTRAS MINUSCULAS, MAS TEM JEITO
+
+carrosCaseInsensitive = ["toyota", "honda", "volkswage", "fiat"]
+
+carrosCINovo= sorted(carrosCaseInsensitive, key=str.lower)
+
+print(carrosCINovo)
+
+print("----------------------------------------------")
+#fora da questao de ordem alfabetica, o REVERSE simplesmente ordena a lista de tras pra frente
+lista_normal = ["toyota", "honda", "volkswage", "fiat"]
+lista_normal.reverse()
+print(lista_normal) #PERMANENTE, mas pra colocar de volta no lugar é só dar reverse de novo
+lista_normal.reverse()
+print(lista_normal)
+
+#IDENTIFICANDO O TAMANHO DE UMA LISTA
+
+carros1 = ["toyota", "honda", "volkswage", "fiat"]
+print(len(carros1))
+
+#lembrar que existe aquela coisa pra descobrir o meio da lista que é o // (lembrar daquele lance do -1 ou +1)
+#NA HORA DE DEFINIR O TAMANHO DA LISTA, ELE DESCONSIDERA O 0, COMEÇA COM 1, ENTAO O LEN RETORNA O TAMANHO NORMAL DA LISTA
