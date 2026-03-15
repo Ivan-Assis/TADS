@@ -58,3 +58,69 @@ lista_del = ["elemento1", "elemento2", "elemento3", "elemento4"]
 del lista_del[2]
 
 print(lista_del)
+
+
+#atribuind valor novo a objeto da lista
+
+lista_teste = ["1", "2", "3"]
+
+lista_teste[1] = "MODIFICADO"
+
+print(lista_teste)
+
+
+#pop() remove o ultimo elemento da lista e possibilita usa-lo mesmo depois disso
+
+lista_teste.pop()
+print(lista_teste)#lista com o elemento removido
+
+#Mas com o pop dá pra vc tirar e ao mesmo tempo colocar ele numa variavel:
+print("_________________________________________")
+lista_teste.append("TESTANDO O POP")
+print(lista_teste)
+
+
+
+variavelPOP = lista_teste.pop()
+print(lista_teste)
+print(variavelPOP)
+
+#da pra usar o pop com outros elementos da lista que nao sao o ultimo, por exemplo:
+
+print("--------------------------------------------------")
+print()
+print()
+print()
+
+lista_pop = ["elemento1", "elemento2", "elemento3", "elemento4"]
+
+elemento_pop = lista_pop.pop(-1)
+
+print(lista_pop)
+print(elemento_pop)
+
+lista_pop.append("ELEMENTO ADICIONAL")
+
+print(lista_pop)
+
+#Dá pra remover um elemento digitando seu conteudo com o remove
+
+print(lista_pop)
+lista_pop.remove("ELEMENTO ADICIONAL")
+
+print(lista_pop)
+
+#Dá pra remover passando variavel por parametro tambem,
+
+lista_A = ["ELEMENTO 1", "ELEMENTO 2", "ELEMENTO 3", "ELEMENTO 4", "ELEMENTO 5"]
+print(lista_A)
+elementoRemover = "ELEMENTO 3"
+
+lista_A.remove(elementoRemover)
+print(lista_A)
+print(elementoRemover)
+
+#O remove SÓ REMOVE A PRIMEIRA OCORRENCIA, se quiser remover todas as ocorrencias tem que repetir o metodo
+
+
+
