@@ -61,3 +61,15 @@ matriz = [[i * j for j in range(1, 4)] for i in range(1, 4)]
 print(matriz)
 
 #FATIANDO/SLICING UMA LISTA
+
+jogadores = ["jogador0", "jogador1", "jogador2", "jogador3","jogador4", "jogador5", "jogador6"  ]
+
+print(jogadores[0:3])
+
+print(jogadores[1:4])
+
+print(jogadores[:3])
+
+print(jogadores[3:])
+
+print(jogadores[0::3])
