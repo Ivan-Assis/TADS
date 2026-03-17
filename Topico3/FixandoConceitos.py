@@ -73,3 +73,24 @@ print(jogadores[:3])
 print(jogadores[3:])
 
 print(jogadores[0::3])
+
+print(jogadores[-2:])
+
+#utilizando LOOP em slicing de uma lista
+
+for jogador in jogadores[1::2]:
+    print(jogador)
+
+#copiando uma lista - PRECISA USAR FATIA, SE NÃO 
+
+comidas = ["comida 1", "comida 2", "comida 3", "comida 4", "comida 5", "comida 6", "comida 7", "comida 8", "comida 9"]
+
+comidasCopia = comidas[:]
+
+print(comidasCopia)
+
+comidas.append("teste1")
+comidasCopia.append("teste2")
+
+print(comidas)
+print(comidasCopia)
