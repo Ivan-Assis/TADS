@@ -26,3 +26,6 @@ print(values_list)
 print(values_set)
 
 #CONJUNTO NAO TEM ELEMENTOS REPETIDOS
+
+for language in set(amigos_linguagens.values):
+    print(language)
