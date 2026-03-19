@@ -94,3 +94,18 @@ comidasCopia.append("teste2")
 
 print(comidas)
 print(comidasCopia)
+
+#TUPLAS
+
+#TUPLA É UMA LISTA IMUTÁVEL, o uso de uma tupla é exatamente como o de uma lista, a única diferença é que ela é construída com () em vez de []
+
+tupla = ("objeto 1", "objeto 2", "objeto 3")
+print(tupla[1])
+print(tupla[2])
+
+#tupla[0] = "alteração" -> NÃO FUNCIONA
+
+#EM TERMOS TÉCNICOS -> Uma tupla SEMPRE tem vírgula, MESMO QUANDO TEM APENAS 1 ELEMENTO, aí nesse caso cria-se uma tupla com uma vírgula solta a direita, veja exemplo:
+
+tupla_unica =("ObjetoUnico",)
+print(tupla_unica)
